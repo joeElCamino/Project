@@ -1,0 +1,172 @@
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 96%;
+    max-width: 1200px;                  /* maximum width of page */
+    margin: 0 auto;
+    background-color: whitesmoke;
+    color: black;
+}
+main {
+    background-color: white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding-top: 1.5em;
+    overflow: hidden;                   /* contains the floats and margins */
+}
+header, #nav_menu ul, .lecture, footer {
+    box-sizing: border-box;             /* include borders in the width */
+}
+article, figure, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+p {
+    font-size: .875em;
+    line-height: 1.5;
+    padding-bottom: .5em;
+}
+a:focus, a:hover {
+    font-style: italic;
+}
+
+/* the styles for the header */
+header {
+    width: 100%;                        /* full width of body */
+    background-color: #165e83;
+    border: 1px solid black;
+    padding: 15px 0;
+    overflow: hidden;                   /* contains the floated logo */
+}
+header h2 {
+    font-size: 2.25em;
+    color: white;
+    margin-left: 12.12121%;             /* 120 / 990 x 100 */
+    text-shadow: 2px 2px goldenrod;
+}
+header h3 {
+    font-size: 1.25em;
+    font-style: italic;
+    color: lightsteelblue;
+    margin-left: 12.12121%;             /* 120 / 990 x 100 */
+}
+header img {
+    width: 8.0808%;                     /* 80 / 990 x 100 */
+    max-width: 80px;                    /* native size */
+    min-width: 40px;                    /* minimum size */
+    float: left;
+    margin-left: 2.0202%;               /* 20 / 990 x 100 */
+}
+
+/* the styles for the navigation menu */
+#nav_menu ul {
+    width: 100%;                        /* width of body */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: lightsteelblue;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    overflow: hidden;                   /* contains the floated items */
+}
+#nav_menu ul li {
+    width: 20%;                         /* 198 / 990 x 100 */
+    float: left;
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    font-weight: bold;
+    text-decoration: none;
+    color: #165e83;
+}
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus {
+    background-color: goldenrod;
+    color: white;
+    font-style: normal;
+}
+#nav_menu ul li a.current {
+    background-color: #165e83;
+    color: white;
+}
+
+/* the styles for the picture */
+figure {
+    width: 44.4444%;                    /* 440 / 990 x 100 */
+    float: left;
+    margin-left: 2.0202%;               /* 20 / 990 x 100 */
+    margin-bottom: 1.5em;
+    background-color: #165e83;
+    border: 1px solid black;
+}
+figure img {
+    max-width: 100%;                    /* width of figure */
+    display: block;
+    margin: 4.5454% auto;               /* 20 / 440 x 100 */
+    width: 90.9090%;                    /* 400 / 440 x 100 */
+}
+
+/* the styles for the article */
+article {
+    width: 47.4747%;                    /* 470 / 990 x 100 */
+    float: left;
+    margin-left: 2.0202%;               /* 20 / 990 x 100 */
+    margin-bottom: 1.5em;
+}
+article h1 {
+    font-size: 1.625em;
+    color: #165e83;
+    padding-bottom: .5em;
+}
+
+/* the styles for the lecture bands */
+.lecture {
+    clear: both;
+    width: 95.9595%;                    /* 950 / 990 x 100 */
+    margin: 0 2.0202% 1.5em 2.0202%;    /* 20 / 990 x 100 */
+    background-color: #165e83;
+    border: 1px solid black;
+    padding: 2.5em 0;
+}
+.lecture_box {
+    width: 54.7368%;                    /* 520 / 950 x 100 */
+    margin: 0 auto;
+    padding: .5em 2.1052%;              /* 20 / 950 x 100 */
+    background-color: white;
+    border: 1px solid black;
+}
+.lecture_box h2 {
+    font-size: 1.25em;
+    color: #165e83;
+    padding-bottom: .5em;
+}
+.lecture_box ul {
+    margin: 0;
+    padding-left: 1.25em;
+}
+.lecture_box li {
+    font-size: .875em;
+    padding-bottom: .5em;
+}
+.lecture_box a {
+    color: #165e83;
+    font-weight: bold;
+}
+
+/* the styles for the footer */
+footer {
+    width: 100%;                        /* width of body */
+    background-color: #165e83;
+    border: 1px solid black;
+    clear: both;
+}
+footer p {
+    font-size: .75em;
+    color: white;
+    text-align: right;
+    margin-right: 2.0202%;              /* 20 / 990 x 100 */
+    padding: 1em 0;
+}
