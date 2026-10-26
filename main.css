@@ -3,7 +3,7 @@ body {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 100%;
     width: 96%;
-    max-width: 1200px;                  /* maximum width of page */
+    max-width: 1200px;
     margin: 0 auto;
     background-color: whitesmoke;
     color: black;
@@ -13,10 +13,10 @@ main {
     border-left: 1px solid black;
     border-right: 1px solid black;
     padding-top: 1.5em;
-    overflow: hidden;                   /* contains the floats and margins */
+    overflow: hidden;
 }
 header, #nav_menu ul, .lecture, footer {
-    box-sizing: border-box;             /* include borders in the width */
+    box-sizing: border-box;
 }
 article, figure, h1, h2, h3, p {
     margin: 0;
@@ -33,45 +33,44 @@ a:focus, a:hover {
 
 /* the styles for the header */
 header {
-    width: 100%;                        /* full width of body */
+    width: 100%;
     background-color: #165e83;
     border: 1px solid black;
     padding: 15px 0;
-    overflow: hidden;                   /* contains the floated logo */
+    overflow: hidden;
 }
 header h2 {
     font-size: 2.25em;
     color: white;
-    margin-left: 12.12121%;             /* 120 / 990 x 100 */
+    margin-left: 12.12121%;
     text-shadow: 2px 2px goldenrod;
 }
 header h3 {
     font-size: 1.25em;
     font-style: italic;
     color: lightsteelblue;
-    margin-left: 12.12121%;             /* 120 / 990 x 100 */
+    margin-left: 12.12121%;
 }
 header img {
-    width: 8.0808%;                     /* 80 / 990 x 100 */
-    max-width: 80px;                    /* native size */
-    min-width: 40px;                    /* minimum size */
+    width: 8.0808%;
+    max-width: 80px;
+    min-width: 40px;
     float: left;
-    margin-left: 2.0202%;               /* 20 / 990 x 100 */
+    margin-left: 2.0202%;
 }
 
-/* the styles for the navigation menu */
 #nav_menu ul {
-    width: 100%;                        /* width of body */
+    width: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
     background-color: lightsteelblue;
     border-left: 1px solid black;
     border-right: 1px solid black;
-    overflow: hidden;                   /* contains the floated items */
+    overflow: hidden;
 }
 #nav_menu ul li {
-    width: 20%;                         /* 198 / 990 x 100 */
+    width: 16.66666%;
     float: left;
 }
 #nav_menu ul li a {
@@ -93,27 +92,25 @@ header img {
     color: white;
 }
 
-/* the styles for the picture */
 figure {
-    width: 44.4444%;                    /* 440 / 990 x 100 */
+    width: 44.4444%;
     float: left;
-    margin-left: 2.0202%;               /* 20 / 990 x 100 */
+    margin-left: 2.0202%;
     margin-bottom: 1.5em;
     background-color: #165e83;
     border: 1px solid black;
 }
 figure img {
-    max-width: 100%;                    /* width of figure */
+    max-width: 100%;
     display: block;
-    margin: 4.5454% auto;               /* 20 / 440 x 100 */
-    width: 90.9090%;                    /* 400 / 440 x 100 */
+    margin: 4.5454% auto;
+    width: 90.9090%;
 }
 
-/* the styles for the article */
 article {
-    width: 47.4747%;                    /* 470 / 990 x 100 */
+    width: 47.4747%;
     float: left;
-    margin-left: 2.0202%;               /* 20 / 990 x 100 */
+    margin-left: 2.0202%;
     margin-bottom: 1.5em;
 }
 article h1 {
@@ -122,19 +119,18 @@ article h1 {
     padding-bottom: .5em;
 }
 
-/* the styles for the lecture bands */
 .lecture {
     clear: both;
-    width: 95.9595%;                    /* 950 / 990 x 100 */
-    margin: 0 2.0202% 1.5em 2.0202%;    /* 20 / 990 x 100 */
+    width: 95.9595%;
+    margin: 0 2.0202% 1.5em 2.0202%;
     background-color: #165e83;
     border: 1px solid black;
     padding: 2.5em 0;
 }
 .lecture_box {
-    width: 54.7368%;                    /* 520 / 950 x 100 */
+    width: 54.7368%;
     margin: 0 auto;
-    padding: .5em 2.1052%;              /* 20 / 950 x 100 */
+    padding: .5em 2.1052%;
     background-color: white;
     border: 1px solid black;
 }
@@ -156,9 +152,122 @@ article h1 {
     font-weight: bold;
 }
 
-/* the styles for the footer */
+article.full {
+    width: 95.9595%;
+}
+
+.gallery_area {
+    clear: both;
+    width: 95.9595%;
+    margin: 0 2.0202% 1.5em 2.0202%;
+}
+.gallery_area h2 {
+    font-size: 1.25em;
+    color: #165e83;
+    padding: 0 0 .5em 1.0526%;
+}
+div.gallery {
+    border: 1px solid #ccc;
+    background-color: white;
+}
+div.gallery:hover {
+    border: 1px solid goldenrod;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: .875em;
+    background-color: lightsteelblue;
+    color: black;
+}
+.responsive {
+    box-sizing: border-box;
+    padding: 0 6px 12px 6px;
+    float: left;
+    width: 33.33333%;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#contact_form {
+    clear: both;
+    width: 95.9595%;
+    margin: 0 2.0202% 1.5em 2.0202%;
+}
+#contact_form fieldset {
+    border: 1px solid #165e83;
+    margin: 0 0 1em 0;
+    padding: .5em 2.1052% 1em 2.1052%;
+    background-color: whitesmoke;
+}
+#contact_form legend {
+    font-weight: bold;
+    color: white;
+    background-color: #165e83;
+    padding: .25em .75em;
+}
+#contact_form label,
+#contact_form .group_label {
+    display: block;
+    font-size: .875em;
+    font-weight: bold;
+    color: #165e83;
+    margin: .75em 0 .25em 0;
+    padding: 0;
+}
+#contact_form input[type="text"],
+#contact_form input[type="email"],
+#contact_form input[type="tel"],
+#contact_form select,
+#contact_form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px 10px;
+    font-family: inherit;
+    font-size: .875em;
+    border: 1px solid #165e83;
+    border-radius: 4px;
+}
+#contact_form input:focus,
+#contact_form select:focus,
+#contact_form textarea:focus {
+    border: 2px solid goldenrod;
+    outline: none;
+}
+#contact_form .choices label {
+    display: inline;
+    font-weight: normal;
+    color: black;
+    margin: 0 1em 0 .25em;
+}
+#contact_form .choices {
+    margin-top: .5em;
+}
+#buttons input {
+    background-color: #165e83;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px 24px;
+    margin-right: .5em;
+    cursor: pointer;
+}
+#buttons input:hover,
+#buttons input:focus {
+    background-color: goldenrod;
+}
+
 footer {
-    width: 100%;                        /* width of body */
+    width: 100%;
     background-color: #165e83;
     border: 1px solid black;
     clear: both;
@@ -167,6 +276,6 @@ footer p {
     font-size: .75em;
     color: white;
     text-align: right;
-    margin-right: 2.0202%;              /* 20 / 990 x 100 */
+    margin-right: 2.0202%;
     padding: 1em 0;
 }
